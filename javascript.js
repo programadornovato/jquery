@@ -1,16 +1,24 @@
 $(document).ready(function(){
-    $('#boton').addClass('btn-danger');
-    $('#boton').removeClass('btn-primary');
+    $('#boton').click(function (e) { 
+        e.preventDefault();
+        $('img').attr('src', 'logo2.png');
+    });
+    $('#subcontenedor button:nth-child(1)').click(function (e) { 
+        e.preventDefault();
+        $('img').attr('width', '200px');
+    });
+    $('#subcontenedor button:nth-child(2)').click(function (e) { 
+        e.preventDefault();
+        let margen= $('img').css('margin-left');
+        //alert(margen);
+        margen=parseInt( margen.replace('px',''));
+        margen=margen+30;
+        $('img').css('margin-left', margen+'px');
+    });
+    $('#subcontenedor button:nth-child(3)').click(function (e) { 
+        e.preventDefault();
+        $('img').toggleClass('d-none');
+    });
 
-    $('#subcontenedor').append('<button type="button" class="btn btn-danger">agregado con append</button>');
-    $('#subcontenedor').prepend('<button type="button" class="btn btn-danger">agregado con prepend</button>');
-
-    $('#boton').css({'color':'blue','background-color':'yellow'});
-    //$('#boton').css('background-color', 'yellow');
-
-    //$('#subcontenedor').remove();
-    //$('#subcontenedor').hide();
-    $('img').attr({'src':'logo2.png','width':'400px'});
-    //$('img').attr('width', '300px');
 });
 
