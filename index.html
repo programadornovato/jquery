@@ -7,50 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="chosen/chosen.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <title>Jquery</title>
 </head>
 
 <body>
 
   <div class="container mt-4">
-    <div class="row">
-      <div class="col-sm">
-        <select class="chosen-select">
-          <option value="">Selecciona un numerito</option>
-          <option value="Uno">Uno</option>
-          <option value="Dos">Dos</option>
-          <option value="Tres">Tres</option>
-          <option value="Cuatro">Cuatro</option>
-          <option value="Cinco">Cinco</option>
-          <option value="Seis">Seis</option>
-          <option value="Siete">Siete</option>
-          <option value="Ocho">Ocho</option>
-          <option value="Nueve">Nueve</option>
-          <option value="Diez">Diez</option>
-        </select>
-      </div>
-      <div class="col-sm">
-          <select class="chosen-select" multiple >
-            <option value="">Selecciona un numerito</option>
-            <option value="Uno">Uno</option>
-            <option value="Dos">Dos</option>
-            <option value="Tres">Tres</option>
-            <option value="Cuatro">Cuatro</option>
-            <option value="Cinco">Cinco</option>
-            <option value="Seis">Seis</option>
-            <option value="Siete">Siete</option>
-            <option value="Ocho">Ocho</option>
-            <option value="Nueve">Nueve</option>
-            <option value="Diez">Diez</option>
-          </select>
-        </div>
-  
+    <div class="form-group">
+      <label for="">Fecha</label>
+      <input type="text" class="form-control" id="fecha" >
+    </div>
+    <div class="form-group">
+      <label for="">Fecha</label>
+      <input type="text" class="form-control" id="fecha2">
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="chosen/chosen.jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="javascript.js"></script>
 </body>
 
